@@ -195,9 +195,3 @@ while True:
         kbd.send(keyboard.Keycode.ALT)
     else:
         pass
-
-    # elif data1 == b'\x1b':
-    #     kbd.send(keyboard.Keycode.POUND)
-
-
-    

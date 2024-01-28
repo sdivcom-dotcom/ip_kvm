@@ -7,7 +7,7 @@ const int relay = 2;
 char inputChar;
 void setup() {
   // put your setup code here, to run once:
-    Serial.begin(115200);
+    Serial.begin(9600);
     pinMode(relay, OUTPUT);
     Rtc.Begin();
 
@@ -48,7 +48,6 @@ void setup() {
 void loop() {
   if (Serial.available() > 0) {
     inputChar = Serial.read();
-
     if (inputChar == 'r') {
       digitalWrite(relay, HIGH);
       delay(50);
