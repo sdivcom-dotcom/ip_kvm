@@ -1,5 +1,5 @@
 from  command_mcu import replase_server
-from keyboard_emulator import read_keyboard
+#from keyboard_emulator import read_keyboard
 import time
 
 def save_number_server(input):
@@ -41,7 +41,7 @@ while True:
                 replase_server(main_command_number, val)
                 save_number_server(main_command_number)
                 time.sleep(1)
-                read_keyboard()
+                #read_keyboard()
                 break
             else:
                 print("Такой команды нет")
